@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- TectViews -->
+    <style name="MyActionBar.MenuTextStyle" parent="style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="TitleText" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="MainText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/textColorTertiary</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Button-->
+    <style name="SelectableItemText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Table -->
+    <style name="Table" parent="AppTheme"></style>
+
+    <style name="TableRowOdd" parent="Table">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="TableRowEven" parent="Table">
+        <item name="android:background">@color/colorSecondary</item>
+    </style>
+
+    <style name="TableItem">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxWidth">140dp</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <!-- AppBar -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Dialog -->
+    <style name="DialogWindowTitle_Holo">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.DialogWindowTitle</item>
+    </style>
+
+    <style name="DialogWindowTitle" parent="@style/DialogWindowTitle_Holo">
+        <item name="android:textAppearance">@style/TextAppearance.DialogWindowTitle</item>
+    </style>
+
+    <style name="TextAppearance.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="Widget.Sphinx.Button.Borderless.Small" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+        <item name="android:textAppearance">@style/TextAppearance.Sphinx.DialogButton</item>
+    </style>
+
+    <style name="TextAppearance.Sphinx.DialogButton" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="AlertDialog">
+        <item name="android:fullDark">@color/colorTertiary</item>
+        <item name="android:topDark">@color/colorTertiary</item>
+        <item name="android:centerDark">@color/colorTertiary</item>
+        <item name="android:bottomDark">@color/colorTertiary</item>
+        <item name="android:fullBright">@color/colorTertiary</item>
+        <item name="android:topBright">@color/colorTertiary</item>
+        <item name="android:centerBright">@color/colorTertiary</item>
+        <item name="android:bottomBright">@color/colorTertiary</item>
+        <item name="android:bottomMedium">@color/colorTertiary</item>
+        <item name="android:centerMedium">@color/colorTertiary</item>
+    </style>
+</resources>

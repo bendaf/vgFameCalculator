@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VG Ansehens-EP Rechner</string>
+    <string name="text.feedback">Feedback</string>
+    <string name="text.about">Info</string>
+    <string name="text.initiate">Frischling</string>
+    <string name="text.member">Mitglied</string>
+    <string name="text.veteran">Veteran</string>
+    <string name="text.leader">Kapitän</string>
+    <string name="title.text.role">Wähle deine Rolle in der Gilde!</string>
+    <string name="title.text.heat">Wähle die Gildenaktivität!</string>
+    <string name="table.raw1.title">Freundschafts-/Ranglistenspiel</string>
+    <string name="table.raw2.title">Battle Royale</string>
+    <string name="table.raw0.title">Spielmodus</string>
+    <string name="table.column1.title">Niederlage</string>
+    <string name="table.column2.title">Sieg</string>
+    <string name="text..message">Nachricht</string>
+    <string name="text.bug">Fehler</string>
+    <string name="text.question">Frage</string>
+    <string name="text.idea">Idee</string>
+    <string name="text.chooser.feedback">Feedback in Email senden:</string>
+    <string name="text.send">Senden</string>
+    <string name="text.cancel">Abbruch</string>
+    <string name="title.about">Über mich</string>
+    <string name="text.explain.role" formatted="false">Jedes neue Gildenmitglied startet als Frischling. Nach 10 Gildenspielen wird man Mitglied. Nach 30 Gildenspielen bekommt man den Rang Veteran. Der Kapitän ist meist der Gründer der Gilde. Wenn der Kapitän die Gilde verlässt, wird der Spieler mit der längsten Gildenzugehörigkeit automatisch der neue Kapitän.</string>
+    <string name="text.explain.heat" formatted="false">Die Gildenaktivität wir auf der Startseite deiner Gilde als (brennender) Stern angezeigt. Wenn in den letzten 2 Tagen mehr als 60% der Mitglieder Gildenspiele gespielt haben, bekommst du 10% Ansehenes-EP mehr. Wenn mehr als 85% aktiv waren, dann 25%.</string>
+    <string name="text.explain.table">Die Tabelle zeigt die Ansehens-EP einer Person pro Spiel. Nach dem Spiel wird die Summe aller Spieler angezeigt, was etwas verwirrend sein kann.</string>
+</resources>

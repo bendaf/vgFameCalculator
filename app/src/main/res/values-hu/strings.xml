@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VG Fame Calculator</string>
+    <string name="table.column1.title">Vesztés</string>
+    <string name="table.column2.title">Nyerés</string>
+    <string name="table.raw0.title">Játék típus</string>
+    <string name="table.raw1.title">Casual/Rank</string>
+    <string name="table.raw2.title">Battle Royale</string>
+    <string name="text..message">Üzenet</string>
+    <string name="text.about">About</string>
+    <string name="text.bug">Hiba</string>
+    <string name="text.cancel">Mégse</string>
+    <string name="text.chooser.feedback">Visszajelzés elküldése emailben:</string>
+    <string name="text.explain.heat" formatted="false">Az aktivitását a guild főoldalán látható csillag jelképezi. Ha az elmúlt 2 napban legalább a guild 60%-a játszott, akkor 10% fame bónuszt kapsz. Ha több mint 85%-a, akkor 25%-ot.</string>
+    <string name="text.explain.role">Minden új tag initate rangon kezd. 10 guild játék után member rangot kapnak. Veteránok pedig 30 játék után lesznek a tagok. A captain általában a guild alapítója, amennyiben ő kilép akkor a legrégebbi guild tag veszi át a helyét.</string>
+    <string name="text.explain.table">Ez a tábla mutatja az egy játékos által nyert guild fame-et egy játék alatt. Megtévesztő lehet, hogy a játék után mutatott fame az egész csapat által nyert összeg.</string>
+    <string name="text.feedback">Visszajelzés</string>
+    <string name="text.idea">Ötlet</string>
+    <string name="text.initiate">Initiate</string>
+    <string name="text.leader">Captain</string>
+    <string name="text.member">Member</string>
+    <string name="text.question">Kérdés</string>
+    <string name="text.send">Küldés</string>
+    <string name="text.veteran">Veteran</string>
+    <string name="title.about">Rólam</string>
+    <string name="title.text.heat">Milyen a guilded aktivitása?</string>
+    <string name="title.text.role">Mi a rangod a guildben?</string>
+</resources>

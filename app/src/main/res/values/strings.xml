@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">VG Fame Calculator</string>
+    <string name="text.feedback">Feedback</string>
+    <string name="text.about">About</string>
+    <string name="text.initiate">Initiate</string>
+    <string name="text.member">Member</string>
+    <string name="text.veteran">Veteran</string>
+    <string name="text.leader">Captain</string>
+    <string name="title.text.role">Select your role in the guild!</string>
+    <string name="title.text.heat">Select your guild\'s heat level!</string>
+    <string name="percent.zero" translatable="false">0%</string>
+    <string name="percent.ten" translatable="false">10%</string>
+    <string name="percent.twenty.five" translatable="false">25%</string>
+    <string name="table.raw1.title">Casual/Rank</string>
+    <string name="table.raw2.title">Battle Royale</string>
+    <string name="table.raw0.title">Match Type</string>
+    <string name="table.column1.title">Loose</string>
+    <string name="table.column2.title">Win</string>
+    <string name="mark.question" translatable="false">\?</string>
+    <string name="text..message">Message</string>
+    <string name="text.bug">Bug</string>
+    <string name="text.question">Question</string>
+    <string name="text.idea">Idea</string>
+    <string name="email.feedback" translatable="false">bendaf92+vgfamecalculator@gmail.com</string>
+    <string name="text.chooser.feedback">Send feedback in email:</string>
+    <string name="text.send">Send</string>
+    <string name="text.cancel">Cancel</string>
+    <string name="text.feedback.bug" translatable="false">I found a bug</string>
+    <string name="text.feedback.question" translatable="false">I have a Question</string>
+    <string name="text.feedback.idea" translatable="false">I have an idea</string>
+    <string name="title.about">About me</string>
+    <string name="text.explain.role">Every new member will be given the Initiate role. After 10 guild matches they will become Members. 30 total guild games will grant players the Veteran role. The Captain of a guild is mostly the founder of the guild, but if the founder quits the oldest member will become Captain.</string>
+    <string name="text.explain.heat" formatted="false">The heat level of the guild is shown at the main page as a (burning) star. If in the past 2 days more than 60% of the guild were playing than you got 10% fame bonus. If more than 85% than you get 25% bonus.</string>
+    <string name="text.explain.table">This table shows the fame earned by one person in a match. After a match the game shows the total amount of fame that all of the team members collected together, which can be confusing.</string>
+</resources>
