@@ -1,5 +1,6 @@
 package hu.bendaf.vaingloryfamecalculator;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,6 +14,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        MobileAds.initialize(getApplicationContext(), getString(R.string.id_ads_main_banner));
+
+        AdView mAdView = (AdView) findViewById(R.id.main_banner);
+        AdRequest adRequest = new AdRequest.Builder()/*.addTestDevice("535043F6446AA7564340A97BBE7B6ADC")*/.build();
+        if(mAdView != null) {
+            mAdView.loadAd(adRequest);
+        }
     }
 
     @Override
@@ -60,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     private void showFeedBack() {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        View dialogBody = getLayoutInflater().inflate(R.layout.dialog_body_feedback, null, false);
+        @SuppressLint("InflateParams") View dialogBody = getLayoutInflater().inflate(R.layout.dialog_body_feedback, null, false);
         final RadioGroup rgFeedbackSubject = (RadioGroup) dialogBody.findViewById(R.id.rgFeedback);
         rgFeedbackSubject.check(R.id.rbIdea);
         final EditText etMessage = (EditText) dialogBody.findViewById(R.id.etMessage);
@@ -71,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                         int radioButtonID = rgFeedbackSubject.getCheckedRadioButtonId();
 
                         Intent emailIntent = new Intent(Intent.ACTION_SENDTO,
-                                Uri.fromParts("mailto",getString(R.string.email_feedback), null));
+                                Uri.fromParts("mailto", getString(R.string.email_feedback), null));
                         emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{getString(R.string.email_feedback)});
                         emailIntent.putExtra(Intent.EXTRA_SUBJECT, rgFeedbackSubject.findViewById(radioButtonID).getContentDescription());
                         emailIntent.putExtra(Intent.EXTRA_TEXT, etMessage.getText());

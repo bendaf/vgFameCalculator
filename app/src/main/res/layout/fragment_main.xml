@@ -1,4 +1,5 @@
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,234 +11,248 @@
     tools:context="hu.bendaf.vaingloryfamecalculator.MainActivityFragment"
     tools:showIn="@layout/content_main">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:scrollbars="none">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSecondary"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/exp_layout_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:ael_duration="500"
+                    app:ael_expanded="true"
+                    app:ael_interpolator="accelerateDecelerate"
+                    app:ael_orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_role_title"
+                        style="@style/TitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="15dp"
+                        android:text="@string/title.text.role" />
+
+                    <LinearLayout
+                        android:id="@+id/llt_chose_role"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_role_title"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_role_initiate"
+                            style="@style/SelectableItemText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text.initiate" />
+
+                        <TextView
+                            android:id="@+id/tv_role_member"
+                            style="@style/SelectableItemText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text.member" />
+
+                        <TextView
+                            android:id="@+id/tv_role_veteran"
+                            style="@style/SelectableItemText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text.veteran" />
+
+                        <TextView
+                            android:id="@+id/tv_role_leader"
+                            style="@style/SelectableItemText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text.leader" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/MainText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/llt_chose_role"
+                        android:text="@string/text.explain.role" />
+
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/exp_layout_heat"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/colorSecondary"
+                    android:elevation="4dp"
+                    app:ael_duration="500"
+                    app:ael_expanded="true"
+                    app:ael_interpolator="accelerateDecelerate"
+                    app:ael_orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_heat_title"
+                        style="@style/TitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="15dp"
+                        android:text="@string/title.text.heat" />
+
+                    <LinearLayout
+                        android:id="@+id/llt_chose_heat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_heat_title"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_heat_0"
+                            style="@style/SelectableItemText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/percent.zero" />
+
+                        <TextView
+                            android:id="@+id/tv_heat_10"
+                            style="@style/SelectableItemText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/percent.ten" />
+
+                        <TextView
+                            android:id="@+id/tv_heat_25"
+                            style="@style/SelectableItemText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/percent.twenty.five" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/MainText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/llt_chose_heat"
+                        android:text="@string/text.explain.heat" />
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@color/colorSecondary"
+                    android:elevation="6dp"
+                    android:gravity="top|center_horizontal">
+
+                    <TableLayout
+                        android:id="@+id/tbl_fames"
+                        style="Table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        android:paddingTop="10dp">
+
+                        <TableRow
+                            style="@style/TableRowOdd"
+                            android:layout_width="fill_parent"
+                            android:layout_height="100dp">
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_00"
+                                style="@style/TableItem"
+                                android:text="@string/table.raw0.title" />
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_01"
+                                style="@style/TableItem"
+                                android:text="@string/table.column1.title" />
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_02"
+                                style="@style/TableItem"
+                                android:text="@string/table.column2.title" />
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/TableRowEven"
+                            android:layout_width="fill_parent"
+                            android:layout_height="100dp">
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_10"
+                                style="@style/TableItem"
+                                android:text="@string/table.raw1.title" />
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_11"
+                                style="@style/TableItem"
+                                android:text="@string/mark.question" />
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_12"
+                                style="@style/TableItem"
+                                android:text="@string/mark.question" />
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/TableRowOdd"
+                            android:layout_width="fill_parent"
+                            android:layout_height="100dp">
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_20"
+                                style="@style/TableItem"
+                                android:text="@string/table.raw2.title" />
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_21"
+                                style="@style/TableItem"
+                                android:text="@string/mark.question" />
+
+                            <TextView
+                                android:id="@+id/tv_fame_table_22"
+                                style="@style/TableItem"
+                                android:text="@string/mark.question" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        style="@style/MainText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tbl_fames"
+                        android:text="@string/text.explain.table" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/main_banner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorSecondary"
-            android:elevation="2dp"
-            android:orientation="vertical">
-
-            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                android:id="@+id/exp_layout_role"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                app:ael_duration="500"
-                app:ael_expanded="true"
-                app:ael_interpolator="accelerateDecelerate"
-                app:ael_orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tv_role_title"
-                    style="@style/TitleText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_margin="15dp"
-                    android:text="@string/title.text.role" />
-
-                <LinearLayout
-                    android:id="@+id/llt_chose_role"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_role_title"
-                    android:layout_margin="20dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tv_role_initiate"
-                        style="@style/SelectableItemText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text.initiate" />
-
-                    <TextView
-                        android:id="@+id/tv_role_member"
-                        style="@style/SelectableItemText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text.member" />
-
-                    <TextView
-                        android:id="@+id/tv_role_veteran"
-                        style="@style/SelectableItemText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text.veteran" />
-
-                    <TextView
-                        android:id="@+id/tv_role_leader"
-                        style="@style/SelectableItemText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text.leader" />
-                </LinearLayout>
-
-                <TextView
-                    style="@style/MainText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/llt_chose_role"
-                    android:text="@string/text.explain.role" />
-
-            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
-
-            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                android:id="@+id/exp_layout_heat"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:background="@color/colorSecondary"
-                android:elevation="4dp"
-                app:ael_duration="500"
-                app:ael_expanded="true"
-                app:ael_interpolator="accelerateDecelerate"
-                app:ael_orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tv_heat_title"
-                    style="@style/TitleText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_margin="15dp"
-                    android:text="@string/title.text.heat" />
-
-                <LinearLayout
-                    android:id="@+id/llt_chose_heat"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_heat_title"
-                    android:layout_margin="20dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tv_heat_0"
-                        style="@style/SelectableItemText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/percent.zero" />
-
-                    <TextView
-                        android:id="@+id/tv_heat_10"
-                        style="@style/SelectableItemText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/percent.ten" />
-
-                    <TextView
-                        android:id="@+id/tv_heat_25"
-                        style="@style/SelectableItemText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/percent.twenty.five" />
-                </LinearLayout>
-
-
-                <TextView
-                    style="@style/MainText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/llt_chose_heat"
-                    android:text="@string/text.explain.heat" />
-            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="260dp"
-                android:background="@color/colorSecondary"
-                android:elevation="6dp"
-                android:gravity="top|center_horizontal">
-
-                <TableLayout
-                    android:id="@+id/tbl_fames"
-                    style="Table"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_margin="10dp"
-                    android:paddingTop="10dp">
-
-                    <TableRow
-                        style="@style/TableRowOdd"
-                        android:layout_width="fill_parent"
-                        android:layout_height="100dp">
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_00"
-                            style="@style/TableItem"
-                            android:text="@string/table.raw0.title" />
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_01"
-                            style="@style/TableItem"
-                            android:text="@string/table.column1.title" />
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_02"
-                            style="@style/TableItem"
-                            android:text="@string/table.column2.title" />
-                    </TableRow>
-
-                    <TableRow
-                        style="@style/TableRowEven"
-                        android:layout_width="fill_parent"
-                        android:layout_height="100dp">
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_10"
-                            style="@style/TableItem"
-                            android:text="@string/table.raw1.title" />
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_11"
-                            style="@style/TableItem"
-                            android:text="@string/mark.question" />
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_12"
-                            style="@style/TableItem"
-                            android:text="@string/mark.question" />
-                    </TableRow>
-
-                    <TableRow
-                        style="@style/TableRowOdd"
-                        android:layout_width="fill_parent"
-                        android:layout_height="100dp">
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_20"
-                            style="@style/TableItem"
-                            android:text="@string/table.raw2.title" />
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_21"
-                            style="@style/TableItem"
-                            android:text="@string/mark.question" />
-
-                        <TextView
-                            android:id="@+id/tv_fame_table_22"
-                            style="@style/TableItem"
-                            android:text="@string/mark.question" />
-                    </TableRow>
-                </TableLayout>
-
-                <TextView
-                    style="@style/MainText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tbl_fames"
-                    android:text="@string/text.explain.table" />
-            </RelativeLayout>
-        </LinearLayout>
-    </ScrollView>
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/id.ads.main_banner" />
+    </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
 

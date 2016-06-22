@@ -32,4 +32,6 @@
     <string name="text.explain.role">Every new member will be given the Initiate role. After 10 guild matches they will become Members. 30 total guild games will grant players the Veteran role. The Captain of a guild is mostly the founder of the guild, but if the founder quits the oldest member will become Captain.</string>
     <string name="text.explain.heat" formatted="false">The heat level of the guild is shown at the main page as a (burning) star. If in the past 2 days more than 60% of the guild were playing than you got 10% fame bonus. If more than 85% than you get 25% bonus.</string>
     <string name="text.explain.table">This table shows the fame earned by one person in a match. After a match the game shows the total amount of fame that all of the team members collected together, which can be confusing.</string>
+    <string name="id.ads.main_banner" translatable="false">ca-app-pub-5425763861284537/5469919001</string>
+    <string name="id.ads.app" translatable="false">ca-app-pub-5425763861284537~3993185808</string>
 </resources>
