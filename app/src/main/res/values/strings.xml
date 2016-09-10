@@ -17,7 +17,7 @@
     <string name="table.column1.title">Loose</string>
     <string name="table.column2.title">Win</string>
     <string name="mark.question" translatable="false">\?</string>
-    <string name="text..message">Message</string>
+    <string name="text.message">Message</string>
     <string name="text.bug">Bug</string>
     <string name="text.question">Question</string>
     <string name="text.idea">Idea</string>

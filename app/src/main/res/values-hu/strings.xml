@@ -6,7 +6,7 @@
     <string name="table.raw0.title">Játék típus</string>
     <string name="table.raw1.title">Casual/Rank</string>
     <string name="table.raw2.title">Battle Royale</string>
-    <string name="text..message">Üzenet</string>
+    <string name="text.message">Üzenet</string>
     <string name="text.about">About</string>
     <string name="text.bug">Hiba</string>
     <string name="text.cancel">Mégse</string>

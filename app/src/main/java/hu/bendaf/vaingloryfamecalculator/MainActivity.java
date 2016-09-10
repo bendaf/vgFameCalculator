@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.app_name);
         builder.setMessage("This app is made by Felician Benda, android app developer." + "\n" +
+                "The app icon is made by Traore Sibien Youssouf." + "\n" +
                 "app version: " + BuildConfig.VERSION_NAME);
         setUpDialog(builder.show());
 

@@ -27,7 +27,7 @@ public class MainActivityFragment extends Fragment implements ExpandableLayoutLi
     final int[] roleIds = {R.id.tv_role_initiate, R.id.tv_role_member, R.id.tv_role_veteran, R.id.tv_role_leader};
     final int[] heatIds = {R.id.tv_heat_0, R.id.tv_heat_10, R.id.tv_heat_25};
     final int[] fameTableIds = {R.id.tv_fame_table_21, R.id.tv_fame_table_22, R.id.tv_fame_table_11, R.id.tv_fame_table_12};
-    final int[][][] fames = /*Initiate*/{{{1, 2, 7, 10},      /*10*/ {1, 2, 7, 11},     /*25*/ {2, 3, 9, 13}},
+    final int[][][] fames = /*Initiate*/{{{2, 2, 7, 10},      /*10*/ {2, 2, 7, 11},     /*25*/ {2, 3, 9, 13}},
                                /*Member*/{{18, 25, 50, 75},   /*10*/ {20, 27, 55, 82},  /*25*/ {25, 33, 75, 101}},
                               /*Veteran*/{{25, 35, 75, 100},  /*10*/ {27, 37, 82, 110}, /*25*/ {33, 45, 101, 135}},
                               /*Leader*/ {{35, 45, 100, 125}, /*10*/ {37, 50, 110, 138},/*25*/ {44, 56, 125, 168}}};

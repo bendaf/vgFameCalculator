@@ -14,7 +14,7 @@
     <string name="table.raw0.title">Spielmodus</string>
     <string name="table.column1.title">Niederlage</string>
     <string name="table.column2.title">Sieg</string>
-    <string name="text..message">Nachricht</string>
+    <string name="text.message">Nachricht</string>
     <string name="text.bug">Fehler</string>
     <string name="text.question">Frage</string>
     <string name="text.idea">Idee</string>
